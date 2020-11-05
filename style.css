@@ -1,0 +1,480 @@
+body * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: monospace;
+   display: flex;
+}
+/*
+///////////////// GLOWNA STRONA //////////////////////////////////////
+1. MENU
+2. NAPIS: SPRAWDŹ TO!
+3. KARTY
+4. NAPIS: CZYM SIĘ ZAJMUJEMY?
+5. OPIS: CZYM SIĘ ZAJMUJEMY?
+6. NAPIS: ZAREJESTRUJ SIĘ!
+7. OPIS: FORMULARZ
+8. FORMULARZ
+9. STOPKA
+10. KARUZELA
+//////////////// POTEGI //////////////////////////////////////////
+1. MENU
+11. NAPIS: POTĘGI O WYKŁADNIKU NATURALNYM
+12. OPIS: POTĘGI O WYKŁADNIKU NATURALNYM
+13. NAPIS: POTĘGI O WYKŁADNIKU CAŁKOWITYM
+14. OPIS: POTĘGI O WYKŁADNIKU CAŁKOWITYM
+15. NAPIS: POTĘGI O WYKŁADNIKU WYMIERNYM
+12. OPIS: POTĘGI O WYKŁADNIKU WYMIERNYM
+16. NAPIS: WŁASNOŚCI POTĘG
+17. NAPIS: PRZYKŁADY
+18. OPIS: WŁASNOŚCI POTĘG
+19. NAPIS: PORADNIK DLA POCZĄTKUJĄCYCH
+20. PORADNK
+9. STOPKA
+//////////////// FUNKCJA WYKŁADNICZA ////////////////////////////////
+1. MENU
+21. NAPIS: DEFINICJA - FUNKCJA WYKŁADNICZA
+22. OPIS: DEFINICJA - FUNKCJA WYKŁADNICZA
+23. NAPIS: WYKRESY FUNKCJI WYKŁADNICZEJ
+24. NAPISY DO WYKRESÓW
+25. ZDJĘCIA WYKRESÓW
+26. NAPIS: WŁASNOŚĆI FUNKCJI WYKŁADNICZEJ
+27. NAPIS: PRZYKŁADY
+28. OPIS: WŁASNOŚCI FUNKCJI WYKŁADNICZEJ
+29. NAPIS: PORADNIK DLA POCZĄTKUJĄCYCH - WYKŁADNICZA
+30. PORADNIK FUNKCJA WYKŁADNICZA
+//////////////// FUNKCJA LOGARYTMICZNA ////////////////////////////////
+31. NAPIS: DEFINICJA LOGARYTMU
+32. NAPIS: WLASNOŚCI LOGARYTMU
+
+*/
+
+/*============================1==================================*/
+.menu{
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu header{
+    width: 50%;
+    background-color: black;
+}
+.menu nav{
+    width: 50%;
+    background-color: black;
+}
+.menu a{
+    display: block;
+text-decoration: none;
+    padding: 1em;
+    color: white;
+}    
+.prawamenu{
+    border-right: .5px solid white;
+}
+.lewamenu{
+    border-left: .5px solid white;
+}
+.srodekmenu{
+      border-left: .5px solid white;
+      border-right: .5px solid white;
+}
+/*============================2==================================*/
+.napiskarty{
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    color: dodgerblue;
+    justify-content: center;
+    font-size: 18px;
+}
+/*============================3==================================*/
+.karty{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+}
+.kartapierwsza{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20%;
+  
+}
+.kartadruga{
+    display: flex;
+    flex-direction: column;
+     border: 1px solid black;
+     width: 20%;
+ 
+}
+.kartatrzecia{
+    display: flex;
+    flex-direction: column;
+     border: 1px solid black;
+     width: 20%;
+   
+}
+.artykulkarty{
+ border-top: 1px solid black;
+ padding: .7em;
+}
+.guzik a{
+    width: 20%;
+    padding: .5em;
+    border-radius: 1em;
+    justify-content: center;
+    background-color: dodgerblue;
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.guzik{
+    padding: 0.3em;
+    display: flex;
+    justify-content: flex-end;
+    border-top: none;
+}
+.zdjkartypierwsze img{
+ width: 100%;  
+}
+.zdjkartydrugie img{
+ width: 100%;  
+}
+.zdjkartytrzecie img{
+ width: 100%;  
+}
+ a:hover {
+  background-color: skyblue;
+}
+/*============================4==================================*/
+.napisopis{
+     width: 100%;
+    display: flex;
+    font-weight: 500;
+    color: dodgerblue;
+    justify-content: center;
+    font-size: 18px;
+}
+/*============================5==================================*/
+.opis{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+}
+.opis aside{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.opis article{
+    width: 50%;
+}
+.opis p{
+    width: 300%;
+}
+/*============================6==================================*/
+.napisformularz{
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    color: dodgerblue;
+    justify-content: center;
+    font-size: 18px;
+}
+/*============================7==================================*/
+.artykulformularz{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+/*============================8==================================*/
+.formularz{
+    width: 100%;
+    background-color: dodgerblue;
+    padding: 4em;
+    
+}
+.formularz form{
+    width: 58%;
+       font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+}
+.formularz form input{
+    border-top: 1px solid black;
+     border-left: 1px solid black;
+     border-bottom: 1px solid black;
+    padding: 1em;
+    text-align: center;
+}
+.formularz article{
+    width: 42%;
+}
+.formularz a{
+        text-decoration: none;
+        border: 1px solid black;
+        color: black;
+        padding: 1em;
+    background-color: white;
+    font-size: 13px;
+}
+/*============================9==================================*/
+.stopka footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+     padding: 1em;
+}
+.stopka p{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+     padding: 1em;
+    font-size: 14px;
+}
+.stopka{
+     display: flex;
+    flex-direction: column-reverse;
+}
+.stopka a{
+    padding: .2em;
+}
+/*============================10==================================*/
+.carousel section{
+    width: 100%;
+}
+/*============================11==================================*/
+.napispotnat{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+
+}
+/*============================12==================================*/
+opis{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+}
+.opis figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.opis article{
+    width: 50%;
+}
+.opis p{
+  width: 300%;
+}
+/*============================13==================================*/
+.napispotcal{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================14==================================*/
+.opisdwa{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+}
+.opisdwa figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.opisdwa article{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.opisdwa p{
+    width: 300%;
+}
+/*============================15==================================*/
+.napispotwym{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================16==================================*/
+.napiswlasnosci{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================17==================================*/
+.napisprzyklady{
+     width: 75%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: flex-end;
+}
+/*============================18==================================*/
+.wlasnoscipoteg{
+    width: 100%;
+}
+.wlasnoscipoteg figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.wlasnoscipoteg section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/*============================19==================================*/
+.napisporadnik{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================20==================================*/
+.poradnikpotegi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*============================21==================================*/
+.napisdefinicjawykladnicza{
+    width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================22==================================*/
+
+.opisfunkcjawykladnicza{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+.opisfunkcjawykladnicza figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.opisfunkcjawykladnicza article{
+    width: 50%;
+    line-height: 2.1em;
+    font-size: 1.1em;
+}
+.opisfunkcjawykladnicza p{
+    width: 300%;
+}
+/*============================23==================================*/
+.napiswykresywykladnicza{
+    width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================24==================================*/
+.wykresywykladnicza{
+    width: 100%;
+}
+.wykresywykladnicza article{
+    width: 50%;
+}
+.wykresywykladnicza aside{
+    width: 50%;
+}
+.wykrespierwszy{
+    display: flex;
+    justify-content: center;
+    color: dodgerblue;
+}
+.wykresdrugi{
+    display: flex;
+    justify-content: center;
+}
+.wykresywykladnicza h2{
+ color: dodgerblue;
+}
+/*============================25==================================*/
+.wykresyzdjecia{
+    width: 100%;
+}
+.wykresyzdjecia figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.wykresyzdjecia section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.wykresyzdjecia img{
+      border: 2px solid dodgerblue;
+}
+/*============================26==================================*/
+.napiswlasnosciwykladnicza{
+    width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================27==================================*/
+.napisprzykladywlasnosci{
+     width: 75%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: flex-end;
+}
+/*============================28==================================*/
+.wlasnoscifunkcjiwykladniczej{
+    width: 100%;
+}
+.wlasnoscifunkcjiwykladniczej figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.wlasnoscifunkcjiwykladniczej section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/*============================29==================================*/
+.napisporadnikwykladnicza{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
+/*============================30==================================*/
+.poradnikfunkcjawykladnicza{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.przykladlogarytmwykres img{
+    border: 1px solid dodgerblue;
+}
+.cos img{
+    border: 1px solid dodgerblue;
+}
+/*============================31==================================*/
+.napislogarytm{
+     width: 100%;
+    display: flex;
+    color: dodgerblue;
+    justify-content: center;
+}
